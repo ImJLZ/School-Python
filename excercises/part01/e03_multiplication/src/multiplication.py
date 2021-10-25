@@ -1,7 +1,20 @@
 #!/usr/bin/env python3
 
-def main():
-    # Enter your solution here
+# Everything after a hash sign (#) is considered a comment in Python
 
-if __name__ == "__main__":
+# The print statement could be written on the top-level (zero indentation),
+# but here we have put it inside the main function.
+# This enables TestMyCode (TMC) framework to work correctly.
+
+# In more complicated programs it is good practise not to clutter the top-level of the program
+# by using a main function as here.
+
+def main():
+    for i in range(11):
+        value = i*4
+        print('4 multiplied by '+str(i)+' is '+ str(value))
+
+# This makes sure the main function is not called immediatedly
+# when TMC imports this module
+if __name__ == '__main__':
     main()

@@ -5,7 +5,7 @@ import unittest
 
 from tmc import points
 
-from tmc.utils import load, get_stdout
+from tmc.utixls import load, get_stdout
 
 module_name="src.hello_world"
 main = load(module_name, "main")
